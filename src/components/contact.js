@@ -86,10 +86,10 @@ function verif(event) {
 <input type='email' className='email' placeholder='Email' />
 </div>
 <div className='item-form'>
-<input type='text' className='objet' placeholder='Object' />
+<input type='text' className='objet' placeholder='Objet' />
 </div>
 <div className='item-form'>
-<textarea className='mail' placeholder='Mail'>
+<textarea className='mail' placeholder='Description'>
 
 </textarea>
 </div>

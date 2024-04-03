@@ -1,5 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import cer1 from '../img/imgs/Logo-norme-ISO-14001.png';
+import cer2 from '../img/imgs/Logo-norme-ISO-45001.png';
+import cer3 from '../img/imgs/png-transparent-organization-iso-9000-iso-9001-2015-certification-iso-9001-text-trademark-logo-thumbnail.png';
 function Propos() {
   const [isVisible, setIsVisible] = useState(false);
   const aproposRef = useRef(null);
@@ -54,7 +57,22 @@ Nous avons l'honneur de vous présenter notre entreprise pour vous permettre d'a
   <li>Fabrication et montage réservoir</li>
   <li>Travaux tuyauterie</li>
 </ul>
+<div className='ceritfications'>
+<h1>Ceritfications</h1>
+<div className='certificat'>
+<img src={cer1} alt='' />
+<h3>ISO 14001</h3>
+</div>
+<div className='certificat'>
+<img src={cer2} alt='' />
+<h3>ISO 45001 </h3>
+</div>
+<div className='certificat'>
+<img src={cer3} alt='' />
+<h3>ISO 9001 </h3> 
+</div>
 
+</div>
 
 
     </div>

@@ -223,7 +223,7 @@ background-color: #031a6e6f;
   display: flex;
   flex-wrap: wrap;
   padding-top:25px ;
- padding-bottom: 45px;
+  
 
 
 }
@@ -486,16 +486,57 @@ z-index: 0;
     margin-left: 10px;
     margin-top: 20px;
   }
+  .item-form input{
+    background-color: transparent;
+    border: 0px solid;
+    border-bottom: 1px solid var(--color3) ;
+  color: var(--color1);
+  font-weight: bold;
+  transition: ease-in-out 0.15s;
+  }
+ .Apropos .ceritfications{
+  width: 100%;
+  margin-top: 30px;
+  padding: 50px 0px;
+
+ }
+ .ceritfications h1{
+color: var(--color3);
+font-size: 50px;
+ }
+  .ceritfications .certificat{
+    display: inline-block;
+    width: 15%;
+    height: 300px;
+margin-top: 30px;
+margin-left: 30px;
+  }
+  .certificat img{
+    width: 100%;
+    height: 70%;
+  }
+  .certificat h3{
+    color: var(--color2);
+    margin-top: 30px;
+  }
   .cnt textarea{
     width: 300px;
     height: 100px;
     resize: none;
     overflow: auto;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color3);
   }
   .cnt input{
     width:300px;
 height: 40px;
   }
+  .cnt input:focus{
+    outline: none;
+    border-bottom: 3px solid var(--color3);
+  }
+
   .cnt button{
     padding: 10px 15px;
     margin-top: 15px;
@@ -576,7 +617,9 @@ font-weight: bold;
     margin-left: 500px;
   }
 
-
+  .ceritfications .certificat{
+    width: 22%;
+  }
   .cnt button{
     margin-left: 80px;
   }
@@ -637,6 +680,7 @@ background-color: #031a6e54;
 }
 .imge .tite{
   height: 90px;
+
 }
   .headitems {
     flex-direction: column;
