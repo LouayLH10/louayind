@@ -619,7 +619,11 @@ font-weight: bold;
 
   .ceritfications .certificat{
     width: 22%;
-    height: 220px;
+    height: 190px;
+    margin-left: 15px;;
+  }
+  .certificat h3{
+  font-size: 15px;
   }
   .cnt button{
     margin-left: 80px;
