@@ -337,6 +337,17 @@ padding-bottom: 25px;
   margin-left: 20%;
   z-index: 0;
 }
+.imgs-container .slide-container{
+  height: 500px;
+}
+.imgs-container .slide-container .imge{
+  height: 500px;
+  
+}
+.imge img{
+  height: 100%;
+width: 100%;
+}
 @keyframes oppa{
   0%{
     opacity: 0;
@@ -345,36 +356,7 @@ padding-bottom: 25px;
     opacity:1;
   }
 }
-.imgs-container .cntr{
-  height: 100%;
-}
-.imgs-container .left,.imgs-container .right{
-  display: inline-block;
-  transition: 0.15s ease-in-out;
 
-  width: 50px;
-}
-
-.imgs-container .left:hover,.imgs-container .right:hover{
-transform: scale(1.1);
-backdrop-filter: blur(3px);
-}
-.imgs-container .right{
-  color: var(--color1);
-  height: 100%;
-  float: right;
-}
-.imgs-container .left{
-  color: var(--color1);
- float: left;
-  height: 100%;
-}
-.left i,.right i{
-  margin-top: 240px;
-  font-weight: bold;
-  font-size: 25px;
-
-}
 .Titre{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -418,35 +400,11 @@ backdrop-filter: blur(3px);
     
   }
 }
-.imgs-container .imge{
-  position: relative;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-
-}
-.imge .tite{
-  position: relative;
-  top: 70%;
- background-color: #031a6ea6;
-  height: 150px;
-  color: var(--color1);
-  padding-top: 20px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 40px;
-}
 .invisible{
-display: none;
+width: 0px;
 transition: 0.15 ease-in-out;
 }
 
-.imge img{
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-
-}
 .Contact{
   background-color: var(--color2);
   width:100%;
@@ -504,16 +462,33 @@ z-index: 0;
 color: var(--color3);
 font-size: 50px;
  }
+ .ceritfications .certificat.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
   .ceritfications .certificat{
     display: inline-block;
-    width: 15%;
-    height: 300px;
-margin-top: 30px;
-margin-left: 30px;
+    width: 20%;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+margin-top: 60px;
+margin-left: 40px;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+border-top:5px solid var(--color2) ;
+border-bottom:5px solid var(--color3) ;
+padding: 25px 25px;
+border-radius: 25px;
+
+  }
+  .certificat .descrip{
+    color: #282c34;
+    font-size: 10px;
+    margin-top: 10px;
   }
   .certificat img{
-    width: 100%;
-    height: 70%;
+    width: 60%;
+    height: 60%;
   }
   .certificat h3{
     color: var(--color2);
@@ -588,7 +563,19 @@ color: var(--color2);
     transition: 0.15s ease-in-out;
   }
 
-
+  .imge .tite{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+    height: 90px;
+    position: absolute;
+    top:400px;
+    padding: 10px 20px;
+    font-size: 24px;
+    text-align: center;
+    background-color: #031a6e65;
+    color: var(--color3);
+  width: 50%;
+  }
   .cnt .contect .items{
     margin-top: 26px;
   
@@ -616,14 +603,29 @@ font-weight: bold;
     margin-top: 15px;
     margin-left: 500px;
   }
-
+  .ceritfications{
+    padding-bottom: 50px;
+    
+  }
   .ceritfications .certificat{
-    width: 22%;
-    height: 190px;
-    margin-left: 15px;;
+    width: 50%;
+    height: 30%;
+    margin-left: 15px;
+    padding: 25px 25px;
+    opacity: 1;
+    transform: translateY(0);
   }
   .certificat h3{
   font-size: 15px;
+  }
+  .certificat img{
+    width: 50%;
+    height: 50%;
+  }
+  .certificat .descrip{
+    color: #282c34;
+    font-size: 10px;
+    margin-top: 5px;
   }
   .cnt button{
     margin-left: 80px;
@@ -635,6 +637,10 @@ font-weight: bold;
       }
    .prp::after
    {display: none; 
+   }
+   .Apropos{
+
+    padding-bottom: 200px;
    }
    .Apropos .lste{
 list-style: none;
@@ -673,7 +679,10 @@ background-color: #031a6e54;
 .Home h1{
   font-size: 45px;
 }
-
+.Gallery{
+  position: relative;
+  
+}
 .Gallery .imgs-container{
   margin-left: 90px;
   height: 300px;
@@ -685,7 +694,24 @@ background-color: #031a6e54;
 }
 .imge .tite{
   height: 90px;
-
+  position: absolute;
+  top:200px;
+  padding: 10px 20px;
+  font-size: 5px;
+  text-align: center;
+  background-color: #031a6e65;
+  color: var(--color3);
+width: 50%;
+}
+.imgs-container .slide-container{
+  height: 300px;
+}
+.imgs-container .slide-container .imge{
+  height: 300px;
+  
+}
+.imge .tite{
+  z-index: 3;
 }
   .headitems {
     flex-direction: column;
@@ -737,8 +763,8 @@ background-color: #031a6e54;
   margin-left: 40%;
 }
 .Gallery .imgs-container .tite{
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 23px;
+ font-size: 14px;
+
  padding-top: 10px;
 }
 .cnt .contect .items {
@@ -774,11 +800,12 @@ background-color: #031a6e54;
   .Contact .Titre{
     margin-left: 30%;
   }
-  .Gallery .imgs-container .tite{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
-   padding-top: 12px;
-  }
+ .imge .tite{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 5px;
+ padding: 20px 20px;
+ width: 50%;
+ }
   .cnt .contactez{
     margin-top: 25px;
         font-size: 30px;

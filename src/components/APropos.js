@@ -43,6 +43,21 @@ function Propos() {
       });
     }
   }, [isVisible]);
+  const certificates = document.querySelectorAll('.certificat');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && window.innerWidth > 950) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, {
+    threshold: 0.1 // Adjust this value for triggering the animation earlier or later
+  });
+
+  certificates.forEach(cert => {
+    observer.observe(cert);
+  });  
 
   return (
     <div className="Apropos" ref={aproposRef}>
@@ -62,14 +77,22 @@ Nous avons l'honneur de vous présenter notre entreprise pour vous permettre d'a
 <div className='certificat'>
 <img src={cer1} alt='' />
 <h3>ISO 14001</h3>
+<p className="descrip">
+Le certificat ISO 14001 est une norme internationale qui établit des critères pour un système de management environnemental afin d'aider les organisations à améliorer leurs performances environnementales et à se conformer aux obligations réglementaires.</p>
 </div>
 <div className='certificat'>
 <img src={cer2} alt='' />
 <h3>ISO 45001 </h3>
+<p className="descrip">
+Le certificat ISO 45001 est une norme internationale qui établit des critères pour un système de management de la santé et de la sécurité au travail, visant à améliorer la sécurité des employés et à réduire les risques sur le lieu de travail.</p>
+
 </div>
 <div className='certificat'>
 <img src={cer3} alt='' />
 <h3>ISO 9001 </h3> 
+<p className="descrip">
+Le certificat ISO 9001 est une norme internationale qui établit des critères pour un système de management de la qualité afin d'assurer que les entreprises répondent aux exigences des clients et améliorent continuellement leurs processus et performances.</p>
+
 </div>
 
 </div>
