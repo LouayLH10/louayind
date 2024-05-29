@@ -23,7 +23,7 @@ function Gallery() {
           <Slide>
             {slideImages.map((each, index) => (
               <div key={index} className='imge'>
-                <img src={each} alt={`Image ${index}`} />
+                <img src={each} alt={` ${index}`} />
                 <h1 className='tite'>{slideTitles[index]}</h1>
               </div>
             ))}

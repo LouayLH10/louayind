@@ -479,7 +479,7 @@ border-top:5px solid var(--color2) ;
 border-bottom:5px solid var(--color3) ;
 padding: 25px 25px;
 border-radius: 25px;
-
+max-height: 500px;
   }
   .certificat .descrip{
     color: #282c34;
@@ -608,7 +608,7 @@ font-weight: bold;
     
   }
   .ceritfications .certificat{
-    width: 50%;
+    width: 60%;
     height: 30%;
     margin-left: 15px;
     padding: 25px 25px;
@@ -619,7 +619,7 @@ font-weight: bold;
   font-size: 15px;
   }
   .certificat img{
-    width: 50%;
+    width: 70%;
     height: 50%;
   }
   .certificat .descrip{
@@ -668,15 +668,17 @@ background-color: #031a6e54;
   transition: 0.15s ease-in-out;
 }
 .Home::before{
-  background-size:130% ;
+  background-size:133% ;
   height: 100%;
 }
+
 .Home{
   height: 320px;
 
 }
 
 .Home h1{
+  margin-top: 60px;
   font-size: 45px;
 }
 .Gallery{
@@ -694,9 +696,10 @@ background-color: #031a6e54;
 }
 .imge .tite{
   height: 90px;
+  width: 50px;
   position: absolute;
   top:200px;
-  padding: 10px 20px;
+  padding: 10px 40px;
   font-size: 5px;
   text-align: center;
   background-color: #031a6e65;
@@ -735,6 +738,7 @@ width: 50%;
  .Apropos .prp,.Apropos .lste{
   width: 100%;
   text-align: center;
+  margin-top: 50px;
  }
 
   .open-menu,
@@ -792,19 +796,22 @@ width: 50%;
 }
 @media(max-width:500px){
   .Apropos .Titre{
-    margin-left: 30%;
+    margin-left: 27%;
+    font-size: 40px;
   }
   .Gallery .Titre{
-    margin-left: 30%;
+    margin-left: 34%;
+    font-size: 40px;
   }
   .Contact .Titre{
-    margin-left: 30%;
+    margin-left: 34%;
+    font-size: 40px;
   }
  .imge .tite{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 5px;
+  font-size: 16px;
  padding: 20px 20px;
- width: 50%;
+ width: 290px;
  }
   .cnt .contactez{
     margin-top: 25px;
