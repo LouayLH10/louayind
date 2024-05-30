@@ -6,7 +6,7 @@ import Home from './components/home';
 import Propos from './components/APropos';
 import Gallery from './components/gallery';
 import Contact from './components/contact';
-import emailjs from 'emailjs-com';
+
 function App() {
   const [isChecked, setIsChecked] = useState(false);
   const menRef = useRef(null);
@@ -26,11 +26,7 @@ function App() {
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
   };
-  const clickmen=()=>{
-    const chk = document.querySelector("#check");
  
-
-  };
   const clickacc=()=>{
     const home = document.querySelector(".Home");
     home.scrollIntoView({ behavior: "smooth" });
