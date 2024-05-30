@@ -26,11 +26,7 @@ function App() {
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
   };
-  const clickmen=()=>{
-    const chk = document.querySelector("#check");
- 
 
-  };
   const clickacc=()=>{
     const home = document.querySelector(".Home");
     home.scrollIntoView({ behavior: "smooth" });
