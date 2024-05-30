@@ -91,7 +91,7 @@ Le certificat ISO 45001 est une norme internationale qui établit des critères 
 <img src={cer3} alt='' />
 <h3>ISO 9001 </h3> 
 <p className="descrip">
-Le certificat ISO 9001 est une norme internationale qui établit des critères pour un système de management de la qualité afin d'assurer que les entreprises répondent aux exigences des clients et améliorent continuellement leurs processus et performances.</p>
+Le certificat ISO 9001 est une norme internationale qui établit des critères pour un système de management de la qualité des entreprises qui répondent aux exigences des clients et améliorent continuellement leurs processus et performances.</p>
 
 </div>
 
