@@ -14,10 +14,7 @@ function App() {
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
   };
-  const scrl=()=>{
-    const props=document.querySelector(".Apropos");
-    props.scrollIntoView({ behavior: "smooth" });
-   };
+
   const navigateToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {

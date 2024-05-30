@@ -1,10 +1,11 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import { scrl } from '../App';
+
 function Home() {
+  var hm=document.querySelector("Home").nextElementSibling;
   const handleClick = () => {
-    scrl();
+  hm.scrollIntoView({ behavior: "smooth" });
   };
   return (
     <div className="Home">
