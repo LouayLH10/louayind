@@ -8,7 +8,7 @@ import Home from './components/home';
 import Propos from './components/APropos';
 import Gallery from './components/gallery';
 import Contact from './components/contact';
-
+import Loading from './components/Loading';
 function App() {
   const [isChecked, setIsChecked] = useState(false);
   const menRef = useRef(null);
@@ -66,6 +66,7 @@ function App() {
 
   return (
     <div className="App">
+      <Loading/>
       <header>
         <nav className="navbar">
           <h2>Louay industrie et maintenance</h2>
