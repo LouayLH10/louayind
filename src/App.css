@@ -670,6 +670,9 @@ height: 90%;
     padding-bottom: 50px;
     
   }
+  .ceritfications h1{
+    font-size: 40px;
+  }
   .ceritfications .certificat{
     width: 60%;
     height: 30%;
@@ -714,8 +717,14 @@ height: 90%;
     padding-bottom: 200px;
    }
    .Apropos .lste{
-list-style: none;
-margin-left: 0px;
+list-style: circle;
+margin-left: 10px;
+text-align: left;
+
+   }
+   .lste li{
+    font-size: 17px;
+    margin-left: 10px;
    }
     .Contact .cnt{
       margin-left: 0px;
@@ -808,8 +817,9 @@ width: 50%;
 
  .Apropos .prp,.Apropos .lste{
   width: 100%;
-  text-align: center;
+  text-align: left;
   margin-top: 50px;
+  margin-left: 30px;
  }
 
   .open-menu,
