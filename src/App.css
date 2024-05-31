@@ -701,6 +701,9 @@ height: 90%;
   
   border-radius: 50%;
   }
+  .App{
+    overflow-x: hidden;
+  }
   .cnt button{
     margin-left: 80px;
   }
