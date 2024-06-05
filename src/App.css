@@ -548,6 +548,8 @@ color: var(--color2);
   .cnt .contect{
     margin-top: 30px;
     color: var(--color3);
+    height: 100%;
+   justify-content: center;
   }
   .cnt .contect .items{
     margin-top: 15px;
@@ -558,7 +560,7 @@ color: var(--color2);
     padding: 8px 10px;
     width: 50px;
     font-size: 30px;
-    margin-left: 60px;
+    margin-left: 40px;
     border-radius: 50px;
     display: inline-block;
     transition: 0.15s ease-in-out;
@@ -593,9 +595,11 @@ color: var(--color2);
 
   }
 .contect .media{
-
-  width: 60%;
-  margin-left:100px ;
+ 
+ display: flex;
+ width: 50%;
+ margin-left: 23%;
+ justify-content: center;
 }
 .error{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -730,6 +734,16 @@ height: 90%;
    .prp::after
    {display: none; 
    }
+   .cnt .contect .items{
+   margin-left: 40px;
+  
+
+  }
+  .cnt .contect .media .items{
+    margin-left: 10px;
+   
+ 
+   }
    .Apropos{
 
     padding-bottom: 200px;
@@ -751,9 +765,11 @@ text-align: left;
         margin-left: 20px;
       }
 .contect .media{
-margin-left: 40%;
-position: relative;
-text-align: left;
+
+
+display: flex;
+justify-content: center;
+padding-left: 50px;
 }
       
 .space{
@@ -856,23 +872,25 @@ width: 50%;
 .what{
   left:80%;
 }
-
+.cnt .contect{
+text-align: center;
+padding-left: 15px;
+}
 .Gallery .imgs-container .tite{
  font-size: 14px;
 
  padding-top: 10px;
 }
-.cnt .contect .items {
-   margin-left: 10px;
-    
-}
+
 .Contact .cnt{
-    
-  width: 100%;
+ 
+justify-content: center;
+width: 100%;
 }
 .cnt .contect{
  
   width: 100%;
+  
 }
 .contect .cent{
  
