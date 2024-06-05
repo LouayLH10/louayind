@@ -107,6 +107,8 @@ function verif(event) {
 <h3 className='items'><i class="fa-solid fa-phone"></i><span className='mail'>&nbsp; +216 28 815 988</span> </h3>
 <h3 className='items'><i class="fa-solid fa-phone"></i><span className='mail'>&nbsp; +216 70 038 568</span> </h3>
 <h3 className='items'><i class="fa-solid fa-envelope"></i> <span className='mail'>lim_commercial@outlook.com</span></h3>
+<h3 className='items'><i class="fa-solid fa-location-dot"></i> <span className='mail'>Rue Elanbar N°8 Sidi Boulbaba, Gabes</span></h3>
+
 </div>
 <br/>
 <br/>
@@ -115,7 +117,6 @@ function verif(event) {
 <div className='items sm'><div className='it'><a href='https://www.facebook.com/profile.php?id=100085379020261' target='_blank'><i class="fa-brands fa-facebook"></i></a></div></div>
 <div className='items sm'><div className='it'><a href=''><i class="fa-brands fa-linkedin"></i></a></div></div>
 </div>
-<h3 className='items'><i class="fa-solid fa-location-dot"></i> <span className='mail'>Rue Elanbar N°8 Sidi Boulbaba, Gabes</span></h3>
 </div>
 </div>
 
