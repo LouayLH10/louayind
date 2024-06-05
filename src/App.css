@@ -232,16 +232,19 @@ background-color: #031a6e6f;
   font-size: 50px;
   text-align: center;
   position: relative;
-  margin-left: 42%;
-  margin-top: 10px;
+  
+  display: flex;
+  justify-content: center;
+  
+  width: 100%;
 }
-.Titre::after{
+.Apropos .Titre::after{
 content: "";
 right: 0;
-left: 0;
+left: 45%;
 top: 70px;
 position: absolute;
-width: 100%;
+width: 10%;
 height: 10px;
 background-color: var(--color3);
 }
@@ -310,15 +313,18 @@ max-height: 400px;
 
   text-align: center;
   position: relative;
-  margin-left: 42%;
+  display: flex;
+  justify-content: center;
+  
+  width: 100%;
 }
 .Gallery .Titre::after{
 content: "";
 right: 0;
-left: 0;
+left: 45%;
 top: 70px;
 position: absolute;
-width: 100%;
+width: 10%;
 height: 10px;
 background-color: var(--color2);
 }
@@ -414,19 +420,23 @@ transition: 0.15 ease-in-out;
   padding-top: 30px;
 }
 .Contact .Titre{
-  margin-left: 43%;
+ 
   font-size: 50px;
   color: var(--color1);
   position: relative;
 z-index: 0;
+display: flex;
+justify-content: center;
+width: 100%;
+
 }
 .Contact .Titre::after{
   content: "";
   right: 0;
-  left: 0;
+  left: 45%;
   top: 70px;
   position: absolute;
-  width: 100%;
+  width: 10%;
   height: 10px;
   background-color: var(--color3);
 
@@ -841,15 +851,7 @@ width: 50%;
 .what{
   left:80%;
 }
-.Apropos .Titre{
-  margin-left: 40%;
-}
-.Gallery .Titre{
-  margin-left: 40%;
-}  
-.Contact .Titre{
-  margin-left: 40%;
-}
+
 .Gallery .imgs-container .tite{
  font-size: 14px;
 
@@ -880,16 +882,26 @@ width: 50%;
 }
 @media(max-width:500px){
   .Apropos .Titre{
-    margin-left: 27%;
     font-size: 40px;
+  }
+  .Apropos .Titre::after{
+    width: 40%;
+    left: 30%;
   }
   .Gallery .Titre{
-    margin-left: 34%;
+    
     font-size: 40px;
   }
+  .Gallery .Titre::after{
+    width: 40%;
+    left: 30%;
+  }
   .Contact .Titre{
-    margin-left: 34%;
     font-size: 40px;
+  }
+  .Contact .Titre::after{
+    width: 40%;
+    left: 30%;
   }
  .imge .tite{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
