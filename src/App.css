@@ -586,9 +586,28 @@ color: var(--color2);
     font-size: 24px;
     text-align: center;
     background-color: #031a6e65;
-    color: var(--color3);
+    color: var(--color1);
+    padding-top: 25px;
   width: 50%;
+  animation:otla3 4s infinite;  
+}  
+@keyframes otla3{
+  0%{
+    top:600px;
   }
+  100%{
+    top:400px;
+  }
+}
+@keyframes otla31{
+  0%{
+    top:600px;
+  }
+  100%{
+    top:200px;
+  }
+}
+  .imge
   .cnt .contect .items{
     margin-top: 26px;
   
@@ -817,8 +836,9 @@ background-color: #031a6e54;
   font-size: 5px;
   text-align: center;
   background-color: #031a6e65;
-  color: var(--color3);
+  color: var(--color1);
 width: 50%;
+animation:otla31 3s infinite;  
 }
 .imgs-container .slide-container{
   height: 300px;
