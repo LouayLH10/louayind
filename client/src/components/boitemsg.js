@@ -22,7 +22,7 @@ function Boitemsg() {
     };
     useEffect(() => {
         // Faites la requête pour récupérer les messages depuis le backend
-        fetch('http://localhost:3000/api/get_msg')
+        fetch('http://localhost:3002/api/get_msg')
             .then(response => response.json())
             .then(data => setMessages(data))
             .catch(error => console.error('Error fetching messages:', error));
