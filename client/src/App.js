@@ -7,7 +7,7 @@ import Propos from './components/APropos';
 import Gallery from './components/gallery';
 import Contact from './components/contact';
 import Login from './components/login';
-import Boitemsg from './components/boitemsg';
+import Boitemsg from './components/boitemsg'  ;
 import Loading from './components/Loading';
 import log from './img/logo_original.png';
 function App() {const [isChecked, setIsChecked] = useState(false);
