@@ -17,7 +17,7 @@ const app = express();
 // Middleware  
 app.use(express.json());  
 app.use(cors({  
-    origin: 'http://localhost:3003', // Permettre l'accès depuis l'application React  
+    origin: 'http://localhost:3000', // Permettre l'accès depuis l'application React  
     credentials: true, // Permet l'envoi de cookies avec les requêtes  
 }));  
 app.use(session({  
