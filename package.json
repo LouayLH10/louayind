@@ -1,7 +1,7 @@
 {
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://LouayLH10.github.io",
+  "homepage": "https://LouayLH10.github.io/lim.tn",
   "scripts": {
     "start": "npm-run-all --parallel start:client start:server",
     "start:client": "npm --prefix client start",
